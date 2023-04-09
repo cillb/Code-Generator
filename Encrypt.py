@@ -9,7 +9,7 @@ from json import load
 from os import mkdir, chdir, listdir
 
 # enter the folder location of the encoding/decryption programs, and the encoding.json file
-#chdir()# enter location where these programs and accompanying json file are kept
+chdir()# enter location where these programs and accompanying json file are kept
 
 # enter a string to use as a modifier 
 modifier = len(input("Please enter your encoding modifier:\t"))
@@ -22,6 +22,7 @@ with open("encoding.json", "r") as enc:
 if "Encode File" not in listdir():
     mkdir("Encode File")
     print("Please place the file containing your message into the folder: Encode File")
+    input("Press enter to continue...")
 chdir("Encode File")
 filesinfolder = listdir()
 if not filesinfolder:# check if the message file is present
