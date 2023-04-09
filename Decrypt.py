@@ -8,7 +8,7 @@ from json import load
 from os import chdir, listdir
 
 # enter the folder location of the encoding/decoding programs, and the encoding.json file
-#chdir()# enter the location where these programs and accompanying json file are kept
+chdir()# enter the location where these programs and accompanying json file are kept
 
 # enter the string needed for the modifier
 modifier = len(input("Please enter your encoding modifier:\t"))
